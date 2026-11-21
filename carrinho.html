@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amir Alimentos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="logo.png" alt="Logo Amir Alimentos"
+                onerror="this.style.visibility='hidden'"><span data-ls>Amir Alimentos</span></a>
+        <button class="ic" id="bur" aria-label="Menu">☰</button>
+        <nav id="nav">
+            <a class="lk" href="index.html">Início</a>
+            <a class="lk" href="cardapio.html">Cardápio</a>
+            <a class="lk" href="pedidos.html">Pedidos</a>
+            <a class="lk" href="#contato">Contato</a>
+            <form id="hs"><input maxlength="40" placeholder="Digitar" aria-label="Buscar prato"><button>BUSCA</button>
+            </form>
+            <a class="ic" href="carrinho.html" title="Carrinho">🛒<b id="bd">0</b></a>
+            <span id="visitante"><a class="btn o" href="conta.html">Entrar</a> <a class="btn"
+                    href="conta.html">Cadastrar</a></span>
+            <span id="usuario" hidden><a class="lk" href="perfil.html">👤 <span id="nome-usuario"></span></a> <button
+                    class="btn o" id="sair">Sair</button></span>
+            <button class="ic" id="tema" title="Modo claro/escuro"></button>
+        </nav>
+    </header>
+
+    <main class="wrap">
+        <div class="crt">
+            <div>
+                <h2 data-ls>Seus Pedidos</h2>
+                <div id="itens"></div>
+                <label class="sub">Observação para a cozinha:<input id="obs" maxlength="120"
+                        placeholder="escreva aqui"></label>
+            </div>
+            <aside class="box">
+                <h3>Resumo do pedido</h3>
+                <div class="lin"><span>Subtotal</span><span id="sub"></span></div>
+                <div class="lin"><span>Entrega</span><span id="fre"></span></div>
+                <div class="lin t"><span>Total</span><span id="tot"></span></div>
+                <h3>Endereço</h3>
+                <p id="end" class="sub"></p><a href="perfil.html" class="sub"><u>alterar endereço</u></a>
+                <h3>Pagamento</h3><select id="pg">
+                    <option>Pix</option>
+                    <option>Cartão de crédito</option>
+                    <option>Cartão de débito</option>
+                    <option>Dinheiro</option>
+                </select>
+                <p style="text-align:center;margin-top:16px"><button class="btn" id="ok">Confirmar</button></p>
+            </aside>
+        </div>
+        <p class="sub" style="text-align:center;margin-top:16px">Entrega Estimada - 35 ~ 55 minutos</p>
+    </main>
+    <footer id="contato">
+    <p><b data-ls>Amir Alimentos</b></p>
+    <p>📍 Rua ambrosio, 67 - Belo Horizonte, UF · (31) 12345-6767 · guinomo@pernilongo.com</p>
+    <p>Todos os dias, das 11h às 22h</p>
+    <p>© 2026 Amir Alimentos. Todos os direitos reservados.</p>
+  </footer>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

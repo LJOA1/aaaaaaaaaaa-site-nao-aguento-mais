@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Amir Alimentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="logo.png" alt="Logo Amir Alimentos"
+        onerror="this.style.visibility='hidden'"><span data-ls>Amir Alimentos</span></a>
+    <button class="ic" id="bur" aria-label="Menu">☰</button>
+    <nav id="nav">
+      <a class="lk at" href="index.html">Início</a>
+      <a class="lk" href="cardapio.html">Cardápio</a>
+      <a class="lk" href="pedidos.html">Pedidos</a>
+      <a class="lk" href="#contato">Contato</a>
+      <form id="hs"><input maxlength="40" placeholder="Digitar" aria-label="Buscar prato"><button>BUSCA</button></form>
+      <a class="ic" href="carrinho.html" title="Carrinho">🛒<b id="bd">0</b></a>
+      <span id="visitante"><a class="btn o" href="conta.html">Entrar</a> <a class="btn"
+          href="conta.html">Cadastrar</a></span>
+      <span id="usuario" hidden><a class="lk" href="perfil.html">👤 <span id="nome-usuario"></span></a> <button
+          class="btn o" id="sair">Sair</button></span>
+      <button class="ic" id="tema" title="Modo claro/escuro"></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero"><img class="bg" src="banquete.png" alt="" onerror="this.remove()">
+      <div>
+        <h1 data-ls>Comidas típicas do Leste Europeu</h1>
+        <p>Nossos pratos trazem o verdadeiro sabor da cozinha ucraniana, polonesa e de outros países do Leste Europeu.
+          Receitas autênticas, ingredientes selecionados e um toque especial de casa.</p>
+        <a class="btn" href="cardapio.html">Ver cardápio →</a>
+      </div>
+    </section>
+    <section class="sec">
+      <h2><u>❦</u> <span data-ls>Nossos principais pratos</span> <u>❦</u></h2>
+      <p class="sub">Pratos tradicionais, preparados com ingredientes selecionados.</p>
+      <div class="grid" id="destaques">
+        <article class="card">
+          <div class="foto">🍽️<img src="borscht.png" alt="Borscht (Sopa Ucraniana)" onerror="this.remove()"></div>
+          <small>Pratos principais</small>
+          <h3>Borscht (Sopa Ucraniana)</h3>
+          <p>Sopa de beterraba, repolho e carne bovina, finalizada com creme azedo e endro.</p>
+          <div class="rod"><b>R$ 38,00</b><button class="btn" data-add>🛒 Adicionar</button></div>
+        </article>
+        <article class="card">
+          <div class="foto">🍽️<img src="pierogi.png" alt="Pierogi (Pastel Polonês)" onerror="this.remove()"></div>
+          <small>Pratos principais</small>
+          <h3>Pierogi (Pastel Polonês)</h3>
+          <p>Massa recheada com batata, queijo ou carne, cozida e levemente dourada na manteiga.</p>
+          <div class="rod"><b>R$ 42,00</b><button class="btn" data-add>🛒 Adicionar</button></div>
+        </article>
+        <article class="card">
+          <div class="foto">🍽️<img src="holubtsi.png" alt="Holubtsi (Charuto Ucraniano)" onerror="this.remove()">
+          </div>
+          <small>Pratos principais</small>
+          <h3>Holubtsi (Charuto Ucraniano)</h3>
+          <p>Charutos de repolho recheados com carne, arroz e temperos, cozidos em molho de tomate.</p>
+          <div class="rod"><b>R$ 46,00</b><button class="btn" data-add>🛒 Adicionar</button></div>
+        </article>
+        <article class="card">
+          <div class="foto">🍽️<img src="varenyky.png" alt="Varenyky (Pastel de Massa)" onerror="this.remove()">
+          </div>
+          <small>Pratos principais</small>
+          <h3>Varenyky (Pastel de Massa)</h3>
+          <p>Massa fina recheada com batata, ricota ou frutas, servida com creme azedo.</p>
+          <div class="rod"><b>R$ 40,00</b><button class="btn" data-add>🛒 Adicionar</button></div>
+        </article>
+      </div>
+    </section>
+    <section class="sec">
+      <h2 data-ls>Pronto para matar a fome?</h2>
+      <p class="sub">Crie sua conta e faça seu pedido em poucos cliques.</p><a class="btn"
+        href="conta.html">Criar conta</a>
+    </section>
+  </main>
+  <footer id="contato">
+    <p><b data-ls>Amir Alimentos</b></p>
+    <p>📍 Rua ambrosio, 67 - Belo Horizonte, UF · (31) 12345-6767 · guinomo@pernilongo.com</p>
+    <p>Todos os dias, das 11h às 22h</p>
+    <p>© 2026 Amir Alimentos. Todos os direitos reservados.</p>
+  </footer>
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
